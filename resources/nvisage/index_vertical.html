@@ -1,0 +1,895 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Nvisage</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Website Vertical Scrolling with jQuery" />
+        <meta name="keywords" content="jquery, vertical, scrolling, scroll, smooth"/>
+        <link rel="stylesheet" href="webfontkit-20120831-112848/stylesheet.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="css/style_horizontal.css" type="text/css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="css/css3Lightbox.css" />
+        <link rel="stylesheet" type="text/css" href="css/slider.css" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    </head>
+    <style>
+        a{
+            color:#fff;
+            text-decoration:none;
+        }
+        a:hover{
+            text-decoration:none;
+        }       
+		.contactText {
+			font-family:"cantarellregular", Helvetica, sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+			font-style:normal;
+			letter-spacing:.5px;
+			color: #777;
+		}
+    </style>
+    
+    <body>
+        <!--About/Home-->
+        <div class="section pageOne" id="AboutHome">
+          <div class="NvisageLogo">
+            <a href="index_vertical.html"><img src="images/logoShield.png"/></a>
+          </div>
+            <div class="navBar"></div>
+              <ul class="nav">
+                <li>About</li>
+                <li><a class="vertical" href="#Work">Work</a></li>
+                <li><a class="vertical" href="#Partners">Partners</a></li>
+                <li><a class="vertical" href="#Contact">Contact</a></li>
+              </ul>
+              <div class="findUs">
+                <ul class="findUs">
+                  <li class="facebook"><a href="#"><img src="images/facebookButton.png"/></a></li>
+                  <li class="twitter"><a href="#"><img src="images/twitterButton.png"/></a></li>
+                  <li class="pinterest"><a href="#"><img src="images/pinterestButton.png"/></a></li>
+                </ul>
+              </div>
+            <div class="workBackground">
+              <div class="topOrnament"></div>
+                <div class="container">
+                  <div id="content-slider">
+                    <div id="slider">
+                      <div id="mask">
+                        <ul>
+                          <li id="first" class="firstanimation">
+                            <a href="#"><img src="images/img_1.png" alt="Kala Raksha"/></a>
+                            <div class="tooltip">
+                            <h1>Sanjogita</h1>
+                            </div>
+                          </li>
+            
+                          <li id="second" class="secondanimation">
+                            <a href="#"><img src="images/img_2.jpg" alt="Ajmer Artisans"/></a>
+                            <div class="tooltip">
+                            <h1>Ajmer Artisans</h1>
+                            </div>
+                          </li>
+                        
+                          <li id="third" class="thirdanimation">
+                            <a href="#"><img src="images/img_3.png" alt="Anna Trust"/></a>
+                            <div class="tooltip">
+                            <h1>Anna Trust</h1>
+                            </div>
+                          </li>
+                                    
+                          <li id="fourth" class="fourthanimation">
+                            <a href="#"><img src="images/img_4.png" alt="Craft Kranti"/></a>
+                            <div class="tooltip">
+                            <h1>Craft Kranti</h1>
+                            </div>
+                          </li>
+                                    
+                          <li id="fifth" class="fifthanimation">
+                            <a href="#"><img src="images/img_6.png" alt="Dastkar"/></a>
+                            <div class="tooltip">
+                            <h1>Aghaaz</h1>
+                            </div>
+                          </li>
+                          
+                        </ul>
+                      </div>
+                      <div class="progress-bar"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="descriptionAbout">
+                  <h1>ABOUT US</h1>
+                    <p>At N'visage, we believe that economic sustainability and social empowerment are the keys for community development. We partner with marginalized artisan communities in India, providing them with sustainable employment and fair wages to help improve their economic and social standings. These artisan communities are rich with unique, traditional art forms but lack access to and knowledge of outside markets and modern design trends. We aim to bridge this gap by providing the artisans with the necessary resources to produce functional goods that incorporate their traditional arts with the design trends.</p>
+                    <div style="margin-bottom:30px"></div>
+                </div>
+            </div>
+            <div class="bottomOrnament"></div>
+        </div>
+        <!--Work-->
+        <div class="horizontal pageTwo" id="Work">
+          <div class="NvisageLogo">
+            <a href="index_vertical.html"><img src="images/logoShield.png"/></a>
+          </div>
+            <div class="navBar"></div>
+              <ul class="nav">
+                <li><a class="vertical" href="#AboutHome">About</a></li>
+                <li>Work</li>
+                <li><a class="vertical" href="#Partners">Partners</a></li>
+                <li><a class="vertical" href="#Contact">Contact</a></li>
+              </ul>
+              <div class="findUs">
+                <ul class="findUs">
+                  <li class="facebook"><a href="#"><img src="images/facebookButton.png"/></a></li>
+                  <li class="twitter"><a href="#"><img src="images/twitterButton.png"/></a></li>
+                  <li class="pinterest"><a href="#"><img src="images/pinterestButton.png"/></a></li>
+                </ul>
+              </div>
+            <div class="workBackground_black">
+              <div class="topOrnament_black"></div>
+                <div id="lb-album">
+                  <ul class="lb-album">
+                          <!--image 1-->
+                          <li>
+                              <a href="#image-1">
+                                <img src="images/thumbs/d3mb1.jpg" alt="image01">
+                                <span>Bookends</span>
+                              </a>
+                              <div class="lb-overlay" id="image-1">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/d3mb1full.jpg" alt="image01" />							
+                                <div>
+                                  <a href="#image-6" class="lb-prev">Prev</a>
+                                  <a href="#image-2" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 2-->
+                          <li>
+                              <a href="#image-2">
+                                <img src="images/thumbs/d3mb2.jpg" alt="image02">
+                                <span>Paperweight</span>
+                              </a>
+                              <div class="lb-overlay" id="image-2">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/d3mb2full.jpg" alt="image02" />							
+                                <div>
+                                  <a href="#image-1" class="lb-prev">Prev</a>
+                                  <a href="#image-3" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 3-->
+                          <li>
+                              <a href="#image-3">
+                                <img src="images/thumbs/d3mb3.jpg" alt="image03">
+                                <span>Candlestand</span>
+                              </a>
+                              <div class="lb-overlay" id="image-3">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/d3mb3full.jpg" alt="image03" />							
+                                <div>
+                                  <a href="#image-2" class="lb-prev">Prev</a>
+                                  <a href="#image-4" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 4-->
+                          <li>
+                              <a href="#image-4">
+                                <img src="images/thumbs/d3mb4.jpg" alt="image04">
+                                <span>Card Holder</span>
+                              </a>
+                              <div class="lb-overlay" id="image-4">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/d3mb4full.jpg" alt="image04" />							
+                                <div>
+                                  <a href="#image-3" class="lb-prev">Prev</a>
+                                  <a href="#image-5" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 5-->
+                          <li>
+                              <a href="#image-5">
+                                <img src="images/thumbs/d3mb5.jpg" alt="image05">
+                                <span>Candlestand</span>
+                              </a>
+                              <div class="lb-overlay" id="image-5">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/d3mb5full.jpg" alt="image05" />							
+                                <div>
+                                  <a href="#image-4" class="lb-prev">Prev</a>
+                                  <a href="#image-6" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 6-->
+                          <li>
+                              <a href="#image-6">
+                                <img src="images/thumbs/d3mb6.jpg" alt="image06">
+                                <span>Musicians</span>
+                              </a>
+                              <div class="lb-overlay" id="image-6">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/d3mb6full.jpg" alt="image06" />							
+                                <div>
+                                  <a href="#image-5" class="lb-prev">Prev</a>
+                                  <a href="#image-1" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>WORK</h1>
+                    <div class="shortcutNav">
+                      <ul class="shortcutNav">
+                        <li class="active">Dhokra</li>
+                        <li>|</li>
+                        <li><a class="horizNext" href="#workPg2">Gond</a></li>
+                        <li>|</li>
+                        <li><a class="horizNext" href="#workPg3">Clay</a></li>
+                        <li>|</li>
+                        <li><a class="horizNext" href="#workPg4">Fusion</a></li>
+                      </ul>
+                    </div>
+                    
+                  <p> <br />
+                    The Dhokra metal-casting uses the lost-wax casting technique that was probably used by the Mohenjodaro craftsman to cast the bronze figurine of a dancing girl some 4500 years ago. This unbroken tradition coupled with the intrinsic starkness and vitality of the art that makes Dhokra a coveted collector’s item in India and abroad for connoisseurs and laypersons alike. The Dhokra people are settled over a vast tract in the mineral rich central Indian belt of Orissa, Jharkhand, and Chhatisgarh.</p>
+                </div>
+                <div class="horizNext">
+                  <a class="horizNext" href="#workPg2"></a>
+                </div>
+            </div>
+            <div class="bottomOrnament_black"></div>
+        </div>
+        <!--Work (Page 2)-->
+        <div class="horizontal pageTwo" id="workPg2">
+          <div class="NvisageLogo">
+            <a href="index_vertical.html"><img src="images/logoShield.png"/></a>
+          </div>
+            <div class="navBar"></div>
+              <ul class="nav" style="visibility:hidden">
+                <li><a class="vertical" href="#AboutHome">About</a></li>
+                <li><a class="vertical" href="#Work">Work</a></li>
+                <li>Partners</li>
+                <li><a class="vertical" href="#Contact">Contact</a></li>
+              </ul>
+              <div class="findUs" style="visibility:hidden">
+                <ul class="findUs">
+                  <li class="facebook"><a href="#"><img src="images/facebookButton.png"/></a></li>
+                  <li class="twitter"><a href="#"><img src="images/twitterButton.png"/></a></li>
+                  <li class="pinterest"><a href="#"><img src="images/pinterestButton.png"/></a></li>
+                </ul>
+              </div>
+            <div class="workBackground_black">
+              <div class="topOrnament_black"></div>
+                <div id="lb-album">
+                  <ul class="lb-album">
+                          <!--image 7-->
+                          <li>
+                              <a href="#image-7">
+                                <img src="images/thumbs/gondthumb1.png" alt="image07">
+                                <span>Lamp 1</span>
+                              </a>
+                              <div class="lb-overlay" id="image-7">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/gondfull1.png" alt="image07" />							
+                                <div>
+                                  <a href="#image-12" class="lb-prev">Prev</a>
+                                  <a href="#image-8" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 8-->
+                          <li>
+                              <a href="#image-8">
+                                <img src="images/thumbs/gondthumb2.png" alt="image08">
+                                <span>Lamp 2</span>
+                              </a>
+                              <div class="lb-overlay" id="image-8">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/gondfull2.png" alt="image08" />							
+                                <div>
+                                  <a href="#image-7" class="lb-prev">Prev</a>
+                                  <a href="#image-9" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 9-->
+                          <li>
+                              <a href="#image-9">
+                                <img src="images/thumbs/gondthumb3.png" alt="image09">
+                                <span>Organizer</span>
+                              </a>
+                              <div class="lb-overlay" id="image-9">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/gondfull3.png" alt="image09" />							
+                                <div>
+                                  <a href="#image-8" class="lb-prev">Prev</a>
+                                  <a href="#image-10" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 10-->
+                          <li>
+                              <a href="#image-10">
+                                <img src="images/thumbs/gondthumb4.png" alt="image10">
+                                <span>Book Shelf 1</span>
+                              </a>
+                              <div class="lb-overlay" id="image-10">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/gondfull4.png" alt="image10" />							
+                                <div>
+                                  <a href="#image-9" class="lb-prev">Prev</a>
+                                  <a href="#image-11" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 11-->
+                          <li>
+                              <a href="#image-11">
+                                <img src="images/thumbs/gondthumb5.png" alt="image11">
+                                <span>Book Shelf 2</span>
+                              </a>
+                              <div class="lb-overlay" id="image-11">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/gondfull5.png" alt="image11" />							
+                                <div>
+                                  <a href="#image-10" class="lb-prev">Prev</a>
+                                  <a href="#image-12" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 12-->
+                          <li>
+                              <a href="#image-12">
+                                <img src="images/thumbs/gondthumb6.png" alt="image12">
+                                <span>Tabletop</span>
+                              </a>
+                              <div class="lb-overlay" id="image-12">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/gondfull6.png" alt="image12" />							
+                                <div>
+                                  <a href="#image-11" class="lb-prev">Prev</a>
+                                  <a href="#image-7" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>WORK</h1>
+                    <div class="shortcutNav">
+                      <ul class="shortcutNav">
+                        <li><a class="horizBack" href="#Work">Dhokra</a></li>
+                        <li>|</li>
+                        <li class="active">Gond</li>
+                        <li>|</li>
+                        <li><a class="horizNext" href="#workPg3">Clay</a></li>
+                        <li>|</li>
+                        <li><a class="horizNext" href="#workPg4">Fusion</a></li>
+                      </ul>
+                    </div>
+                    <br />
+                    <p>Gond paintings done on village mud walls use colors derived from charcoal, colored soil, plant sap, leaves, and cow dung and can last up to 20 years. The speciality of Gond panting is the simplicity of the ideas and their representation of the day-to-day life of rural people. Today, paintings for sale are usually done on canvas and paper. The Gond are the largest tribe, and original inhabitants, of India, but the Baiga tribe are also known for their paintings.</p>
+                </div>
+                <div class="horizBack">
+                  <a class="horizBack" href="#Work"></a>
+                </div>
+                <div class="horizNext">
+                  <a class="horizNext" href="#workPg3"></a>
+                </div>
+            </div>
+            <div class="bottomOrnament_black"></div>
+        </div>
+        <!--Work (Page 3)-->
+        <div class="horizontal pageTwo" id="workPg3">
+          <div class="NvisageLogo">
+            <a href="index_vertical.html"><img src="images/logoShield.png"/></a>
+          </div>
+            <div class="navBar"></div>
+              <ul class="nav" style="visibility:hidden">
+                <li><a class="vertical" href="#AboutHome">About</a></li>
+                <li><a class="vertical" href="#Work">Work</a></li>
+                <li>Partners</li>
+                <li><a class="vertical" href="#Contact">Contact</a></li>
+              </ul>
+              <div class="findUs" style="visibility:hidden">
+                <ul class="findUs">
+                  <li class="facebook"><a href="#"><img src="images/facebookButton.png"/></a></li>
+                  <li class="twitter"><a href="#"><img src="images/twitterButton.png"/></a></li>
+                  <li class="pinterest"><a href="#"><img src="images/pinterestButton.png"/></a></li>
+                </ul>
+              </div>
+            <div class="workBackground_black">
+              <div class="topOrnament_black"></div>
+                <div id="lb-album">
+                  <ul class="lb-album">
+                          <!--image 13-->
+                          <li>
+                              <a href="#image-13">
+                                <img src="images/thumbs/terrathumb1.jpg" alt="image13">
+                                <span>Tabletop 1</span>
+                              </a>
+                              <div class="lb-overlay" id="image-13">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/terrafull1.jpg" alt="image13" />							
+                                <div>
+                                  <a href="#image-18" class="lb-prev">Prev</a>
+                                  <a href="#image-14" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 14-->
+                          <li>
+                              <a href="#image-14">
+                                <img src="images/thumbs/terrathumb2.jpg" alt="image14">
+                                <span>Tabletop 2</span>
+                              </a>
+                              <div class="lb-overlay" id="image-14">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/terrafull2.jpg" alt="image14" />							
+                                <div>
+                                  <a href="#image-13" class="lb-prev">Prev</a>
+                                  <a href="#image-15" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 15-->
+                          <li>
+                              <a href="#image-15">
+                                <img src="images/thumbs/terrathumb3.jpg" alt="image15">
+                                <span>Decor</span>
+                              </a>
+                              <div class="lb-overlay" id="image-15">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/terrafull3.jpg" alt="image15" />							
+                                <div>
+                                  <a href="#image-14" class="lb-prev">Prev</a>
+                                  <a href="#image-16" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 16-->
+                          <li>
+                              <a href="#image-16">
+                                <img src="images/thumbs/terrathumb4.png" alt="image16">
+                                <span>Ganesha 1</span>
+                              </a>
+                              <div class="lb-overlay" id="image-16">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/terrafull4.png" alt="image16" />							
+                                <div>
+                                  <a href="#image-15" class="lb-prev">Prev</a>
+                                  <a href="#image-17" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 17-->
+                          <li>
+                              <a href="#image-17">
+                                <img src="images/thumbs/terrathumb5.png" alt="image17">
+                                <span>Ganesha 2</span>
+                              </a>
+                              <div class="lb-overlay" id="image-17">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/terrafull5.png" alt="image17" />							
+                                <div>
+                                  <a href="#image-16" class="lb-prev">Prev</a>
+                                  <a href="#image-18" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 18-->
+                          <li>
+                              <a href="#image-18">
+                                <img src="images/thumbs/terrathumb6.png" alt="image18">
+                                <span>Ganesha 3</span>
+                              </a>
+                              <div class="lb-overlay" id="image-18">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/terrafull6.png" alt="image18" />							
+                                <div>
+                                  <a href="#image-17" class="lb-prev">Prev</a>
+                                  <a href="#image-13" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>WORK</h1>
+                    <div class="shortcutNav">
+                      <ul class="shortcutNav">
+                        <li><a class="horizBack" href="#Work">Dhokra</a></li>
+                        <li>|</li>
+                        <li><a class="horizBack" href="#workPg2">Gond</a></li>
+                        <li>|</li>
+                        <li class="active">Clay</li>
+                        <li>|</li>
+                        <li><a class="horizNext" href="#workPg4">Fusion</a></li>
+                      </ul>
+                    </div>
+                    <br />
+                    <p>This is amongst the oldest and most widespread craft. Historical records of prehistoric era have been found in the remains of pottery. It is believed to have existed since 7000 BC in the Neolithic period. Among the clay products of Uttar Pradesh, pottery of Gorakpur is very famous. The potters of this region make animal figures like horses and elephants with hand-appliquéd ornamentation, figures of gods and goddesses, lamps, and other ritual objects are all crafted by hand.</p>
+                </div>
+                <div class="horizBack">
+                  <a class="horizBack" href="#workPg2"></a>
+                </div>
+                <div class="horizNext">
+                  <a class="horizNext" href="#workPg4"></a>
+                </div>
+            </div>
+            <div class="bottomOrnament_black"></div>
+        </div>
+        <!--Work (Page 4)-->
+        <div class="horizontal pageTwo" id="workPg4">
+          <div class="NvisageLogo">
+            <a href="index_vertical.html"><img src="images/logoShield.png"/></a>
+          </div>
+            <div class="navBar"></div>
+              <ul class="nav" style="visibility:hidden">
+                <li><a class="vertical" href="#AboutHome">About</a></li>
+                <li><a class="vertical" href="#Work">Work</a></li>
+                <li>Partners</li>
+                <li><a class="vertical" href="#Contact">Contact</a></li>
+              </ul>
+              <div class="findUs" style="visibility:hidden">
+                <ul class="findUs">
+                  <li class="facebook"><a href="#"><img src="images/facebookButton.png"/></a></li>
+                  <li class="twitter"><a href="#"><img src="images/twitterButton.png"/></a></li>
+                  <li class="pinterest"><a href="#"><img src="images/pinterestButton.png"/></a></li>
+                </ul>
+              </div>
+            <div class="workBackground_black">
+              <div class="topOrnament_black"></div>
+                <div id="lb-album">
+                  <ul class="lb-album">
+                          <!--image 19-->
+                          <li>
+                              <a href="#image-19">
+                                <img src="images/thumbs/wallthumb1.jpg" alt="image19">
+                                <span>Installation 1</span>
+                              </a>
+                              <div class="lb-overlay" id="image-19">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/wallfull1.jpg" alt="image19" />							
+                                <div>
+                                  <a href="#image-24" class="lb-prev">Prev</a>
+                                  <a href="#image-20" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 20-->
+                          <li>
+                              <a href="#image-20">
+                                <img src="images/thumbs/wallthumb2.jpg" alt="image20">
+                                <span>Installation 2</span>
+                              </a>
+                              <div class="lb-overlay" id="image-20">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/wallfull2.jpg" alt="image20" />							
+                                <div>
+                                  <a href="#image-19" class="lb-prev">Prev</a>
+                                  <a href="#image-21" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 21-->
+                          <li>
+                              <a href="#image-21">
+                                <img src="images/thumbs/wallthumb3.jpg" alt="image21">
+                                <span>Installation 3</span>
+                              </a>
+                              <div class="lb-overlay" id="image-21">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/wallfull3.jpg" alt="image21" />							
+                                <div>
+                                  <a href="#image-20" class="lb-prev">Prev</a>
+                                  <a href="#image-22" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 22-->
+                          <li>
+                              <a href="#image-22">
+                                <img src="images/thumbs/wallthumb4.jpg" alt="image22">
+                                <span>Installation 4</span>
+                              </a>
+                              <div class="lb-overlay" id="image-22">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/wallfull4.jpg" alt="image22" />							
+                                <div>
+                                  <a href="#image-21" class="lb-prev">Prev</a>
+                                  <a href="#image-23" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 23-->
+                          <li>
+                              <a href="#image-23">
+                                <img src="images/thumbs/wallthumb5.jpg" alt="image23">
+                                <span>Installation 5</span>
+                              </a>
+                              <div class="lb-overlay" id="image-23">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/wallfull5.jpg" alt="image23" />							
+                                <div>
+                                  <a href="#image-22" class="lb-prev">Prev</a>
+                                  <a href="#image-24" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                          <!--image 24-->
+                          <li>
+                              <a href="#image-24">
+                                <img src="images/thumbs/wallthumb6.jpg" alt="image24">
+                                <span>Installation 6</span>
+                              </a>
+                              <div class="lb-overlay" id="image-24">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/wallfull6.jpg" alt="image24" />							
+                                <div>
+                                  <a href="#image-23" class="lb-prev">Prev</a>
+                                  <a href="#image-19" class="lb-next">Next</a>
+                                </div>
+                              </div>
+                          </li>
+                  </ul>
+                </div>
+                <div class="description">
+                  <h1>WORK</h1>
+                    <div class="shortcutNav">
+                      <ul class="shortcutNav">
+                        <li><a class="horizBack" href="#Work">Dhokra</a></li>
+                        <li>|</li>
+                        <li><a class="horizBack" href="#workPg2">Gond</a></li>
+                        <li>|</li>
+                        <li><a class="horizBack" href="#workPg3">Clay</a></li>
+                        <li>|</li>
+                        <li class="active">Fusion</li>
+                      </ul>
+                    </div>
+                    <br />
+                    <p>A series of six permanent 20 x 10 feet installations created by the fusion of traditional crafts from all across India—wood-carving, metalwork, clay, gond painting, etc. These have been created and installed at the Jawaharlal Nehru Bhawan, the new Ministry of External Affairs premises.</p>
+                </div>
+                <div class="horizBack">
+                  <a class="horizBack" href="#workPg3"></a>
+                </div>
+            </div>
+            <div class="bottomOrnament_black"></div>
+        </div>
+        <!--Partners-->
+        <div class="section pageThree" id="Partners">
+          <div class="NvisageLogo">
+            <a href="index_vertical.html"><img src="images/logoShield.png"/></a>
+          </div>
+            <div class="navBar"></div>
+              <ul class="nav">
+                <li><a class="vertical" href="#AboutHome">About</a></li>
+                <li><a class="vertical" href="#Work">Work</a></li>
+                <li>Partners</li>
+                <li><a class="vertical" href="#Contact">Contact</a></li>
+              </ul>
+              <div class="findUs">
+                <ul class="findUs">
+                  <li class="facebook"><a href="#"><img src="images/facebookButton.png"/></a></li>
+                  <li class="twitter"><a href="#"><img src="images/twitterButton.png"/></a></li>
+                  <li class="pinterest"><a href="#"><img src="images/pinterestButton.png"/></a></li>
+                </ul>
+              </div>
+            <div class="workBackground">
+              <div class="topOrnament"></div>
+                <div id="lb-album">
+                  <ul class="lb-album">
+                          <!--image 1-->
+                          <li>
+                              <a href="#image-1">
+                                <img src="images/thumbs/partnerlogo1.jpg" alt="image01">
+                                <!--<span>Pointe</span>-->
+                              </a>
+                              <!--button hide
+                              <div class="lb-overlay" id="image-1">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/1.jpg" alt="image01" />							
+                                <div>
+                                  <a href="#image-6" class="lb-prev">Prev</a>
+                                  <a href="#image-2" class="lb-next">Next</a>
+                                </div>
+                              </div>-->
+                          </li>
+                          <!--image 2-->
+                          <li>
+                              <a href="#image-2">
+                                <img src="images/thumbs/partnerlogo2.jpg" alt="image02">
+                                <!--<span>Pointe</span>-->
+                              </a>
+                              <!--button hide
+                              <div class="lb-overlay" id="image-2">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/2.jpg" alt="image02" />							
+                                <div>
+                                  <a href="#image-1" class="lb-prev">Prev</a>
+                                  <a href="#image-3" class="lb-next">Next</a>
+                                </div>
+                              </div>-->
+                          </li>
+                          <!--image 3-->
+                          <li>
+                              <a href="#image-3">
+                                <img src="images/thumbs/partnerlogo3.jpg" alt="image03">
+                                <!--<span>Pointe</span>-->
+                              </a>
+                              <!--button hide
+                              <div class="lb-overlay" id="image-3">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/3.jpg" alt="image03" />							
+                                <div>
+                                  <a href="#image-2" class="lb-prev">Prev</a>
+                                  <a href="#image-4" class="lb-next">Next</a>
+                                </div>
+                              </div>-->
+                          </li>
+                          <!--image 4-->
+                          <li>
+                              <a href="#image-4">
+                                <img src="images/thumbs/partnerlogo4.jpg" alt="image04">
+                                <!--<span>Pointe</span>-->
+                              </a>
+                              <!--button hide
+                              <div class="lb-overlay" id="image-4">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/4.jpg" alt="image04" />							
+                                <div>
+                                  <a href="#image-3" class="lb-prev">Prev</a>
+                                  <a href="#image-5" class="lb-next">Next</a>
+                                </div>
+                              </div>-->
+                          </li>
+                          <!--image 5-->
+                          <li>
+                              <a href="#image-5">
+                                <img src="images/thumbs/partnerlogo5.jpg" alt="image05">
+                                <!--<span>Pointe</span>-->
+                              </a>
+                              <!--button hide
+                              <div class="lb-overlay" id="image-5">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/5.jpg" alt="image05" />							
+                                <div>
+                                  <a href="#image-4" class="lb-prev">Prev</a>
+                                  <a href="#image-6" class="lb-next">Next</a>
+                                </div>
+                              </div>-->
+                          </li>
+                          <!--image 6-->
+                          <li>
+                              <a href="#image-6">
+                                <img src="images/thumbs/partnerlogo6.jpg" alt="image06">
+                             	<!--<span>Pointe</span>-->
+                              </a>
+                          	<!--button hide
+                               <div class="lb-overlay" id="image-6">
+                                <a href="#page" class="lb-close">x Close</a>
+                                <img src="images/full/6.jpg" alt="image06" />							
+                                <div>
+                                  <a href="#image-5" class="lb-prev">Prev</a>
+                                  <a href="#image-1" class="lb-next">Next</a>
+                                </div>
+                              </div> -->
+                          </li>
+                  </ul>
+                </div>
+                <div class="descriptionPartners">
+                  <h1>PARTNERS</h1>
+                  <br />
+                    <p>We are presently collaborating with other like-minded organizations like Craft Kranti, Anna Trust and Sanjogita. These partnerships are helping both parties to expand their resources and reach. Whatever we have accomplished we have accomplished collectively.</p>
+                    <div style="margin-bottom:30px"></div>
+                    <p>Please contact us if you are interested in becoming our partners.</p>
+                </div>
+            </div>
+            <div class="bottomOrnament"></div>
+        </div>
+        <!--Contact-->
+        <div class="section pageFour" id="Contact">
+          <div class="NvisageLogo">
+            <a href="index_vertical.html"><img src="images/logoShield.png"/></a>
+          </div>
+            <div class="navBar"></div>
+              <ul class="nav">
+                <li><a class="vertical" href="#AboutHome">About</a></li>
+                <li><a class="vertical" href="#Work">Work</a></li>
+                <li><a class="vertical" href="#Partners">Partners</a></li>
+                <li>Contact</li>
+              </ul>
+              <div class="findUs">
+                <ul class="findUs">
+                  <li class="facebook"><a href="#"><img src="images/facebookButton.png"/></a></li>
+                  <li class="twitter"><a href="#"><img src="images/twitterButton.png"/></a></li>
+                  <li class="pinterest"><a href="#"><img src="images/pinterestButton.png"/></a></li>
+                </ul>
+              </div>
+            <div class="workBackground_black">
+              <div class="topOrnament_black"></div>
+                <div id="contactForm">
+                <table width="516">
+                  <tr>
+                    <td><form id="form1" name="form1" method="post" action="">
+                      <p>
+                        <label for="name"><span class="contactText">Name</span><br />
+                        </label>
+                        <input type="text" name="name" id="name" size="25" />
+                      </p>
+                      <p>
+                        <label for="email"><span class="contactText">Email</span><br />
+                        </label>
+                        <input type="text" name="email" id="email" size="25"/>
+                      </p>
+                      <p>
+                        <label for="comments"><span class="contactText">Comments</span><br />
+                        </label>
+                        <textarea style="resize:none; margin-top:13px" name="comments" id="comments" cols="64" rows="8"></textarea>
+                      </p>
+                      <p>
+                        <input type="submit" name="submit" id="submit" value="Submit" />
+                        <input type="reset" name="reset" id="reset" value="Reset" />
+                      </p>
+                      </form></td>
+                  </tr>
+                </table>
+                </div>
+                <div class="contactInfo">
+                  <h1>CONTACT</h1>
+                    <p><strong>Address:</strong><br />
+                    S-252, Panchshilla Park <br />
+                    New Delhi-110017, India <br />
+                    </p>
+                    <div style="margin-bottom:30px"></div>
+                    <p><strong>Tel:</strong>
+                    981020030</p>
+                    <div style="margin-bottom:30px"></div>
+                    <p><strong>Email:</strong>
+                    info@nvisage.com</p>
+                </div>
+            </div>
+            <div class="bottomOrnament_black"></div>
+        </div>
+
+        <!-- The JavaScript -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
+        <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('ul.nav a.vertical').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1500,'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    */
+                    event.preventDefault();
+                });
+				$('a.horizNext, a.horizBack, div.shortcutNav a.horizNext, div.shortcutNav a.horizBack').bind('click',function(event){
+                    var $anchor = $(this);
+                    /*
+                    if you want to use one of the easing effects:
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1500,'easeInOutExpo');
+                     */
+                    $('html, body').stop().animate({
+                        scrollLeft: $($anchor.attr('href')).offset().left
+                    }, 1000);
+                    event.preventDefault();
+                });
+            });
+        </script>
+    </body>
+</html>

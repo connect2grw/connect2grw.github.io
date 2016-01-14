@@ -1,0 +1,755 @@
+<!doctype html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Guwahati Artisan Group</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="../favicon.ico">
+		<meta name="description" content="Expanding Fullscreen Grid Portfolio Template" />
+		<meta name="keywords" content="template, html, css, css3, jquery, grid, masonry, fullscreen, background image, flipboard effect" />
+		<meta name="author" content="Codrops" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
+		<link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+		<!-- Fullscreen jQuery template -->
+		<script id="fullviewTmpl" type="text/x-jquery-tmpl"> 
+			{{html bgimage}}
+			<div class="full-view">
+				<span class="full-view-exit">Exit full screen view</span>
+				<div class="header">
+					<h2 class="title">${title}</h2>
+					<div class="full-nav">
+						<span class="full-nav-prev">Previous</span>
+						<span class="full-nav-pages">
+							<span class="full-nav-current">${current}</span>/
+							<span class="full-nav-total">${total}</span>
+						</span>
+						<span class="full-nav-next">Next</span>
+					</div>
+					<p class="subline">${subline}</p>
+					<span class="loading-small"></span>
+				</div>
+				<div class="project-descr-full">
+					<div class="thumbs-wrapper"><div class="thumbs">{{html thumbs}}</div></div>
+					<div class="project-descr-full-wrapper">
+						<div class="project-descr-full-content">{{html description}}</div><!-- project-descr-full-content -->
+					</div>
+				</div><!-- project-descr-full -->
+			</div><!-- full-view -->
+		</script>
+		<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+        </script>
+	</head>
+	<body onLoad="MM_preloadImages('images/pinterest.png','images/facebook.png','images/twitter.png')">
+        <div id="newHead">
+        	<!--<div id="logo">
+            <img src="images/GuwahatiLogo1.png" width="187" height="75" alt="logo">
+<div class="nav">
+		<p class="subline">FB &nbsp; TW &nbsp; PT &nbsp; <br><br>
+        About &nbsp;&nbsp;&nbsp;&nbsp;People&nbsp;&nbsp;&nbsp;&nbsp;Contact
+	  </div>
+       	  </div>-->
+   		</div>
+        
+      
+    
+    <div class="container" id="container">
+		  <div class="item headerHome">
+          <img src="images/GuwahatiLogo1.png" width="148" height="44" alt="logo">
+          
+          
+          <div id="socialMedia">
+          <a href="http://www.facebook.com/pages/Guwahati-Artisans/257246084396513" target="_blank" onMouseOver="MM_swapImage('facebook','','images/facebook.png',1)" onMouseOut="MM_swapImgRestore()"><img src="images/facebookColor.png" alt="Facebook" name="facebook" width="32" height="32" border="0"></a>&nbsp;&nbsp;
+          
+          <a href="http://www.twitter.com" target="_blank" onMouseOver="MM_swapImage('twitter','','images/twitter.png',1)" onMouseOut="MM_swapImgRestore()"><img src="images/twitterColor.png" alt="Twitter" name="twitter" width="32" height="32" border="0"></a>&nbsp;&nbsp;
+          
+          <a href="http://pinterest.com/guwahatiartisan/" target="_blank" onMouseOver="MM_swapImage('pintrest','','images/pinterest.png',1)" onMouseOut="MM_swapImgRestore()"><img src="images/pinterestColor.png" alt="Pintrest" name="pintrest" width="32" height="32" border="0"></a>&nbsp;&nbsp;
+          
+          </div>
+
+			<div id="navPages">
+              <p class="subline">
+              	<a href="#" class="more_link">Work</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="about.html"  class="more_link">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="contact.html" class="more_link">Contact</a></p>
+            </div>
+
+
+	  </div>  	
+			<div class="item block" data-bgimage="images/1tray11_3.jpg">
+				<div class="thumbs-wrapper">
+					<div class="thumbs">
+						<img src="images/thumbs/1.jpg"/>
+						<img src="images/thumbs/tray2.jpg"/>
+                        <img src="images/thumbs/craftsperson1.jpg"/>
+					</div>
+			  </div>
+				<h2 class="title">Deepmala Thulung</h2>
+				<p class="subline">molding <span class="fancy">&amp;</span> carpentry</p>
+				<div class="intro">
+					<p>I learnt bamboo weaving from my mother and aunt – the craft  still continues to fascinate me and consume most of my days. <br>
+                    <a href="#" class="more_link">View work</a></p>
+				</div>
+				<div class="project-descr">
+					<p>Materials: Bamboo</p>
+                    <p>Molded bamboo splits have been used to create the tray that you see here. A single dye is used to create the entire design.</p>
+					<p>The splits are reversed at the ends to work as handles.</p>
+					<p>Thin bamboos are used as side ends to hold all the splits together. The design is 100% green and it doesn’t use any adhesives or chemicals.</p>
+				</div>
+		  </div>
+			<div class="item block" data-bgimage="images/1tray10gradient.jpg">
+				<div class="thumbs-wrapper">
+					<div class="thumbs">
+						<img src="images/thumbs/1tray10editthumb.jpg"/>
+						<img src="images/thumbs/bamboomat1thumb.jpg"/>
+                        <img src="images/thumbs/bamboo_blinds.jpg"/>
+						<img src="images/thumbs/craftsperson2.jpg"/>
+					</div>	
+				</div>
+				<h2 class="title">Ugen Wangmu Drupka</h2>
+				<p class="subline">weaving <span class="fancy">&amp;</span> carpentry</p>
+				<div class="intro">
+					<p>These days I get up at night and sit quietly, letting new ideas come to mind, one after the other. I haven't stopped creating, I'm always searching. <br> <a href="#" class="more_link">View work</a></p></div>
+				<div class="project-descr">
+                	<p>Materials: Bamboo, Rattan <span class="fancy">&amp;</span> Fabric</p>
+					<p>Weaving bamboo splits with thin rattan splits creates the first innovative design. The other two designs-a mat and a blind-are created by using traditional weaving techniques.</p>
+					<p>Alternating colors, finishes, and sizes leads to aesthetically appealing designs.</p>
+                    <p>Natural dyes and finishes are used in these designs. More colors and finish options are available.</p>
+				</div>
+			</div>
+			<div class="item block" data-bgimage="images/fishtray.jpg">
+				<div class="thumbs-wrapper">
+					<div class="thumbs">
+						<img src="images/thumbs/fishtraythumb.jpg"/>
+                        <img src="images/thumbs/3tray3thumb.jpg"/>
+                        <img src="images/thumbs/craftsperson11.jpg"/>
+						
+					</div>
+				</div>
+				<h2 class="title">Dagang Tshering Bhutia</h2>
+				<p class="subline">weaving <span class="fancy">&amp;</span> carpentry</p>
+				<div class="intro">
+					<p>Nature is my biggest teacher and my inspiration—everything around us is inspiring—mountains, rocks, rivers, flora, fauna, etc. <br> <a href="#" class="more_link">View work</a></p>
+				</div>
+				<div class="project-descr">
+                	<p>Materials: Rattan <span class="fancy">&amp;</span> Wood</p>
+					<p>The flexibility of rattan lends itself to create forms that are not possible with materials like bamboo. Two fish trays presented in the first slide are created by shaping rattan and then weaving it with thin rattan splits. One of the trays uses natural dyes.</p> 
+                    <p>The design is 100% green and it doesn’t use any adhesives or chemicals. The oblong tray on the second slide combines wood with rattan.</p>
+				</div>
+			</div>
+			<div class="item block" data-bgimage="images/4tray3.jpg">
+				<div class="thumbs-wrapper">
+					<div class="thumbs">
+						<img src="images/thumbs/4tray3thumb.jpg"/>
+						<img src="images/thumbs/4tray5thumb.jpg"/>
+						<img src="images/thumbs/4tray6thumb.jpg"/>
+                        <img src="images/thumbs/craftsperson8.jpg"/>
+					</div>
+				</div>
+				<h2 class="title">Ajay Deb Pradhan</h2>
+				<p class="subline">weaving <span class="fancy">&amp;</span> carpentry</p>
+				<div class="intro">
+					<p>When you start combining materials, the possibilities of finishes, colors, and textures become unlimited.<br>  <a href="#" class="more_link">View work</a></p>
+				</div>
+				<div class="project-descr">
+                	<p>Materials: Rattan <span class="fancy">&amp;</span> Wood</p>
+					<p>A contemporary take on the traditional rattan basket weaving. The deep-dish trays with their wood base provide a sturdy and flat surface ideal to carry anything.</p>	
+					<p>The edge of the trays and the wood base are given darker finish to create contrast in the designs and make them even more appealing.</p>
+				</div>
+			</div>
+			<div class="item block" data-bgimage="images/3tray2.jpg">
+				<div class="thumbs-wrapper">
+					<div class="thumbs">
+						<img src="images/thumbs/3tray2thumb.jpg"/>
+                        <img src="images/thumbs/3tray4thumb.jpg"/>
+                        <img src="images/thumbs/craftsperson7.jpg"/>
+					</div>
+				</div>
+				<h2 class="title">Shreya Debi Shrestha</h2>
+				<p class="subline">weaving <span class="fancy">&amp;</span> carpentry</p>
+				<div class="intro">
+				  <p>My products might take longer to finish because of the fusion of materails, but I am always satisfied with the end result.<br> <a href="#" class="more_link">View work</a></p>
+				</div>
+				<div class="project-descr">
+					<p>Materials: Rattan <span class="fancy">&amp;</span> Wood</p>
+                    <p>Using contrast in materials and finishes creates designs that are simple yet striking. The set of trays in the second slide provides a variation of sizes that suit both an intimate small gathering and a large party.</p>
+					<p>The wood is treated with natural dyes that are also water resistant and easy to clean.</p>
+				</div>
+			</div>
+			<div class="item block" data-bgimage="images/5tray7.jpg">
+				<div class="thumbs-wrapper">
+					<div class="thumbs">
+						<img src="images/thumbs/5tray7thumb.jpg"/>
+						<img src="images/thumbs/5tray9thumb.jpg"/>
+						<img src="images/thumbs/craftsperson6.jpg"/>
+					</div>
+				</div>
+				<h2 class="title">Dunga Ligmay Wangchuk</h2>
+				<p class="subline">weaving <span class="fancy">&amp;</span> carpentry</p>
+				<div class="intro">
+				  <p>My biggest challenge is to bring you my designs, show you my craft and tell you about our history, of which I feel very proud. <br> <a href="#" class="more_link">View work</a></p>
+				</div>
+				<div class="project-descr">
+					<p>Materials: Bamboo, Rattan <span class="fancy">&amp;</span> Wood</p>
+					<p>Framing techniques are used to create these elegant trays. Woven rattan creates the base for the first tray. A creative four way semi-circle and triangular weave for the base gives it a unique look.</p>
+                    <p>The second tray uses bamboo weave with wooden framing. Weaving cool blue bamboo splits breaks the seriousness of dark brown. Round rattan handles are both elegant and sturdy.</p>
+				</div>
+			</div>
+			<div class="item block" data-bgimage="images/6basket4.jpg">
+				<div class="thumbs-wrapper">
+					<div class="thumbs">
+						<img src="images/thumbs/6basket4thumb.jpg"/>
+						<img src="images/thumbs/6basket5thumb.jpg"/>
+						<img src="images/thumbs/craftsperson5.jpg"/>
+					</div>	
+				</div>
+				<h2 class="title">Jigme wangdi</h2>
+				<p class="subline">weaving <span class="fancy">&amp;</span> coloring </p>
+				<div class="intro">
+			  <p>Practicing traditional bamboo weaving makes me feel good about myself because it means it's a way of preserving an aspect of Assamese artistry... <br><a href="#" class="more_link">View work</a></p></div>
+				<div class="project-descr">
+                	<p>Materials: Bamboo</p>
+					<p>The baskets show here use innovative double-weave technique. In involves creating a basic basket and then using it as a base shape to weave on. </p>
+					<p>Contrasting colors not only enhance the designs but also emphasize the details and exquisite craftsmanship. The range includes both open baskets and baskets with lids.</p>
+				</div>
+			</div>
+			<div class="item block" data-bgimage="images/basket9bg.jpg">
+				<div class="thumbs-wrapper">
+					<div class="thumbs">
+						<img src="images/thumbs/basket9thumb.jpg"/>
+						<img src="images/thumbs/basket8thumb.jpg"/>
+                        <img src="images/thumbs/basket7thumb.jpg"/>
+                        <img src="images/thumbs/craftsperson14.jpg"/>
+					</div>
+				</div>
+				<h2 class="title">Ezra Winmay Samling</h2>
+				<p class="subline">weaving <span class="fancy">&amp;</span> coloring </p>
+				<div class="intro">
+					<p>My weavings are unique, and each design has a meaning. When you learn it, you'll have learned something about Assam, her customs and her people. <br><a href="#" class="more_link">View work</a></p>
+				</div>
+				<div class="project-descr">
+					<p>Materials: Bamboo</p>
+					<p>Simple alterations to the traditional basket can add versatility to their use. They can be used as bread baskets, salad bowls, or to store and serve any liquids. Recycled plastic lining is used in the baskets shown here. Along with adding versatility to their use they also help them maintain a firm shape for longer time.</p>
+				</div>
+			</div>
+			<div class="item block" data-bgimage="images/7basket6.jpg">
+				<div class="thumbs-wrapper">
+					<div class="thumbs">
+						<img src="images/thumbs/7basket6thumb.jpg"/>
+						<img src="images/thumbs/7basket7thumb.jpg"/>
+                        <img src="images/thumbs/craftsperson4.jpg"/>
+					</div>
+				</div>
+				<h2 class="title">Alakesh Kumar Boruah</h2>
+				<p class="subline">weaving <span class="fancy">&amp;</span> coloring </p>
+				<div class="intro">
+					<p>I work with weaving natural materials like bamboo and rattan. Maybe God had planned this way of life for me. <br><a href="#" class="more_link">View work</a></p>
+				</div>
+				<div class="project-descr">
+                <p>Materials: Bamboo, Rattan <span class="fancy">&amp;</span> Wood</p>
+					<p>Perfect circular stackable baskets that make organizing fun. Hints of colors create visual interest.</p>
+					<p>For ages baskets have been re-purposed as covering lids. The second item uses our instincts and creates a product that redefines its use. A wooden base provides a perfect platform to store pizza, chapatti or anything.</p>
+				</div>
+			</div>
+			<div class="item block" data-bgimage="images/basket122bg.jpg">
+				<div class="thumbs-wrapper">
+					<div class="thumbs">
+						<img src="images/thumbs/basket122thumb.jpg"/>
+						<img src="images/thumbs/basket11thumb.jpg"/>
+                        <img src="images/thumbs/craftsperson12.jpg"/>
+					</div>
+				</div>
+				<h2 class="title">Bikash Shankar Roy</h2>
+				<p class="subline">weaving <span class="fancy">&amp;</span> coloring </p>
+				<div class="intro">
+					<p> I watch the movements of insects and animals, the colors of flowers and birds. Sometimes I get ideas from my dreams. <br> 
+                      <a href="#" class="more_link">View work</a></p>
+				</div>
+				<div class="project-descr">
+					<p>Materials: Bamboo</p>
+					<p>Adding color and contrast to the designs through new weaving techniques creates a range of aesthetically pleasing and utilitarian products. Wooden frames help create regular shapes and add durability to the products. Rings could be easily attached (and detached) to the placemats when they are intended to be used as lids.</p>
+				</div>
+			</div>
+			<div class="item block" data-bgimage="images/basketbox1bg.jpg">
+				<div class="thumbs-wrapper">
+					<div class="thumbs">
+						<img src="images/thumbs/basketbox1thumb.jpg"/>
+						<img src="images/thumbs/basketbox2thumb.jpg"/>
+                        <img src="images/thumbs/basketbox3thumb.jpg"/>
+                        <img src="images/thumbs/craftsperson10.jpg"/>
+					</div>
+				</div>
+				<h2 class="title">Palmu Kelly</h2>
+				<p class="subline">weaving <span class="fancy">&amp;</span> carpentry </p>
+				<div class="intro">
+					<p>My artistic formation comes from my ancestors. We all carry this craft in our blood. For me, this work is more than just a job – it's the excitement and passion of my life. <br> <a href="#" class="more_link">View work</a></p>
+				</div>
+				<div class="project-descr">
+					<p>Materials: Bamboo <span class="fancy">&amp;</span> Wood</p>
+					<p>An elegant and sophisticated tabletop collection that includes—file/ magazine organizer; pen/pencil stand; and table storage box with a photo frame. A mix of natural and dyed bamboo strands are used to weave mats. Outer shell of the bamboo is used frame edges to achieve a refined look.</p>
+				</div>
+			</div>
+			<div class="item block" data-bgimage="images/salad1.jpg">
+				<div class="thumbs-wrapper">
+					<div class="thumbs">
+						<img src="images/thumbs/salad1thumb.jpg"/>
+						<img src="images/thumbs/salad2thumb.jpg"/>
+                        <img src="images/thumbs/salad3thumb.jpg"/>
+                        <img src="images/thumbs/craftsperson15.jpg"/>
+					</div>
+				</div>
+				<h2 class="title">Anoop Kumar Gurung</h2>
+				<p class="subline">Carving <span class="fancy">&amp;</span> weaving</p>
+				<div class="intro">
+					<p>This craft is my pride and my life and I think I have found my way. I would want my children to follow me in this way and take up the craft. <br> <a href="#" class="more_link">View work</a></p>
+				</div>
+				<div class="project-descr">
+					<p>Materials: Bamboo</p>
+					<p>Hand carved bamboo cutlery that use the natural contrasting colors of outer and inner shells of bamboo—green and beige. A thin coat of natural edible oil is added to maintain the natural bamboo shine and usability of the cutlery. A basket to store the cutlery is also provided when a complete set is bought.</p>
+				</div>
+			</div>
+			<div class="item block" data-bgimage="images/matwoodbg.jpg">
+				<div class="thumbs-wrapper">
+					<div class="thumbs">
+						<img src="images/thumbs/matwoodthumb.jpg"/>
+                        <img src="images/thumbs/matwoodzoomthumb.jpg"/>
+                        <img src="images/thumbs/brownedgematthumb.jpg"/>
+						<img src="images/thumbs/newmat1thumb.jpg"/>
+						<img src="images/thumbs/newmat2thumb.jpg"/>
+                        <img src="images/thumbs/craftsperson9.jpg"/>
+					</div>
+				</div>
+				<h2 class="title">Dominic Lee Chiu</h2>
+				<p class="subline">Weaving <span class="fancy">&amp;</span> Wood work</p>
+				<div class="intro">
+					<p>Looking at my father's dedication towards his work greatly inspires me. Most importantly, to inherit his talent would be a great honor. <br> <a href="#" class="more_link">View work</a></p>
+				</div>
+				<div class="project-descr">
+					<p>Materials: Bamboo <span class="fancy">&amp;</span> Wood</p>
+					<p>An innovative collection of tablemats and runners. The first one uses wood cut edges to add visual contrast and an element of surprise. The second one uses alternating wide and slim bamboo slats and wider fabric edges, making it easier to clean and fold them. The third product is a runner with round slats and diamond weaving pattern.</p>
+				</div>
+			</div>
+			<div class="item block" data-bgimage="images/matbag1.jpg">
+				<div class="thumbs-wrapper">
+					<div class="thumbs">
+						<img src="images/thumbs/matbag1thumb.jpg"/>
+						<img src="images/thumbs/greenmatthumb.jpg"/>
+                        <img src="images/thumbs/brownmatthumb.jpg"/>
+                        <img src="images/thumbs/redmatthumb.jpg"/>
+						<img src="images/thumbs/craftsperson3weaving.jpg"/>
+					</div>
+				</div>
+				<h2 class="title">Pratishtha Gohain</h2>
+				<p class="subline">Weaving <span class="fancy">&amp;</span> coloring</p>
+				<div class="intro">
+					<p>Even if weaving is a traditional skill for the women in our area and everybody can do it, I still need to learn more... <br> <a href="#" class="more_link">View work</a></p>
+				</div>
+				<div class="project-descr">
+					<p>Materials: Bamboo<span class="fancy">&amp;</span>Fabric</p>
+					<p>A collection of bags that are crated by the fusion of woven bamboo mats with fabric. These can serve as gift bags for occasions like wedding and birthday or festivals like Diwali, Eid and Christmas.</p>
+				</div>
+			</div>
+			<div class="item block" data-bgimage="images/tableware3bg.jpg">
+				<div class="thumbs-wrapper">
+					<div class="thumbs">
+						<img src="images/thumbs/tableware3thumb.jpg"/>
+						<img src="images/thumbs/tableware2thumb.jpg"/>
+                        <img src="images/thumbs/craftsperson16.jpg"/>
+					</div>
+				</div>
+				<h2 class="title">Ugen Tshering Phingo</h2>
+				<p class="subline">weaving <span class="fancy">&amp;</span> carpentry</p>
+				<div class="intro">
+					<p>I will never let go of either my grandfather or my grandson's hands, for what I have learned from the elders, I will teach to the young. <br> <a href="#" class="more_link">View work</a></p>
+				</div>
+				<div class="project-descr">
+					<p>Materials: Bamboo <span class="fancy">&amp;</span> Rattan</p>
+					<p>A set of serving trays that use traditional rattan basket weaving. The deep-dish tray with its wood base provide a sturdy and flat surface ideal to carrying the glass bowls and containers. The edge of the trays and the wood base are given darker finish to create contrast in the designs and make them even more appealing.
+Glass insets in the triplet serving tray makes it appropriate to serving almost anything.</p>
+				</div>
+			</div>
+			<div class="clr"></div>
+	</div><!-- container -->
+   
+		<footer class="reference">
+			
+		</footer>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<!-- the jScrollPane script -->
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+		<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+		<script type="text/javascript" src="js/jquery.gpCarousel.js"></script>
+		<script type="text/javascript">
+			$(window).load(function(){
+				
+					// the main container
+				var $GPContainer	= $('#container'),
+					// the articles (the thumbs)
+					$articles		= $GPContainer.children('div.block'),
+					// total number of articles
+					totalArticles	= $articles.length,
+					// the fullview container
+					$fullview		= $('<div id="fullview" class="full-view-elements"></div>').prependTo( $('body') ),
+					// the overlay
+					$overlay		= $('<div class="overlay"></div>').prependTo( $('body') ),
+					
+					GridPortfolio	= (function() {
+							// current will be the index of the current article
+						var animspeed				= 500,
+							animeasing				= 'jswing', // try easeOutExpo
+							current					= -1,
+							// indicates if certain elements can be animated or not at a given time
+							animrun					= false,
+							init 					= function() {
+								initPlugins();
+								initEventsHandler();
+							},
+							// builds each article's carousel
+							// initiallizes the mansory
+							initPlugins				= function() {
+								// apply carousel functionality to the thumbs-wrapper in each article
+								$articles.find('div.thumbs-wrapper').gpCarousel();
+								
+								// apply mansory to the grid items
+								$GPContainer.masonry({
+									itemSelector	: '.item',
+									columnWidth		: 5,
+									isAnimated		: true
+								});
+							},
+							// events
+							initEventsHandler		= function() {
+								// switch to fullview when we click the "View Project" link
+								$articles.each( function(i) {
+									$(this).find('a.more_link').bind('click.GridPortfolio', function(e) {
+										
+										if( animrun ) return false;
+										animrun			= true;
+										
+										var $article	= $(this).closest('div.block');
+										// update the current value
+										current	= $article.index('.block');
+										// hide scrollbar
+										$('body').css( 'overflow', 'hidden' );
+										// preload the fullview image and then start the animation (showArticle)
+										var $intro		= $article.find('div.intro');
+										$intro.addClass('intro-loading');
+										$('<img/>').load(function() {
+											$intro.removeClass('intro-loading');
+											showArticle( $article, true );
+											animrun	= false;
+										}).attr('src', $article.data('bgimage'));
+										
+										return false;
+									});
+								});
+								
+								// fullview navigation
+								$('#fullview').find('span.full-nav-next').live('click.GridPortfolio', function(e) {
+									if( animrun ) return false;
+									animrun	= true;
+									
+									// circular navigation
+									if( current === totalArticles - 1 )
+										current = 0
+									else
+										++current;
+									// update the fullview current articles number	
+									$fullview.find('span.full-nav-current').html( current + 1 );
+									
+									showFullviewArticle();
+								});
+								$('#fullview').find('span.full-nav-prev').live('click.GridPortfolio', function(e) {
+									if( animrun ) return false;
+									animrun	= true;
+									
+									// circular navigation
+									if( current === 0 )
+										current = totalArticles - 1
+									else	
+										--current;
+									// update the fullview current articles number	
+									$fullview.find('span.full-nav-current').html( current + 1 );
+									
+									showFullviewArticle();
+								});
+								
+								// switch to thumbs view
+								$('#fullview').find('span.full-view-exit').live('click.GridPortfolio', function(e) {
+									var $article	= $articles.eq( current );
+									hideArticle( $article );
+								});
+
+								// window resize 
+								// center the background image if in fullview
+								// reinitialise jscrollpane
+								$(window).bind('resize.GridPortfolio', function(e) {
+									var $bgimage	= $fullview.find('img.bg-img');
+									if( $bgimage.length )
+										centerBgImage( $bgimage );
+										
+									$fullview.find('div.project-descr-full-wrapper').jScrollPane('reinitialise');
+								});
+							},
+							// the clicked article will be cloned;
+							// the clone will be positioned on top of the cloned article;
+							// remove every element from the clone except the thumbs wrapper (basically the image);
+							// enlarge the clone to the window's width & height;
+							// move the thumbs wrapper to the position where the fullview's thumbs wrapper will be placed;
+							// at the same time fade in the overlay;
+							// build the fullview panel with the right data (template)
+							// remove the clone
+							
+							// this function will also be used when we close the fullview article. In this case,
+							// the difference is that we don't animate the values (just set the css values), and the clone is not removed, since we
+							// will use it for the animation (back to the thumb position)
+							showArticle				= function( $article, anim ) {
+								// clone the article
+								var	$clone	= $article.clone().css({
+									left	: $article.offset().left + 'px',
+									top		: $article.offset().top + 'px',
+									zIndex	: 1001,
+									margin	: '0px',
+									height	: $article.height() + 'px'
+								}).attr( 'id', 'article-clone' );
+								
+								// this is the images container which is going to "fly" down
+								var $thumbsWrapper	= $clone.find('div.thumbs-wrapper');
+								
+								// remove unnecessary elements from the clone
+								$clone.children().not($thumbsWrapper).remove();
+								$clone.find('div.thumbs-nav').remove();
+								
+								// position the clone on top of the article with the right css style
+								var padding	= 20 + 20;
+								// animate?
+								$.fn.applyStyle = ( anim ) ? $.fn.animate : $.fn.css;
+								
+								var clonestyle 	= {
+									width	: $(window).width() - padding + 'px',
+									height	: $(window).height() - padding + 'px',
+									left	: '0px',
+									top		: $(window).scrollTop() + 'px'
+								};
+								
+								$clone.appendTo( $('body') ).stop().applyStyle( clonestyle, $.extend( true, [], { duration : animspeed, easing : animeasing, complete : function() {
+									// show the panel (it will be hidden behing the clone though, until this one is removed)
+									$fullview.show()
+									
+									// use the template "fullviewTmpl" to build the fullview panel with the right data
+									var articleFullviewData		= getArticleFullviewData($article);
+									articleFullviewData.current	= current + 1;
+									articleFullviewData.total	= totalArticles;
+									var $fullview_content	= $('#fullviewTmpl').tmpl( articleFullviewData );
+									
+									$fullview_content.appendTo( $fullview );
+									
+									// call the gpCarousel plugin on the fullview thumbs-wrapper
+									$fullview_content.find('div.thumbs-wrapper').gpCarousel({
+										start	: $article.find('div.thumbs-wrapper').data('currentImage')
+									});
+									
+									//jscrollpane
+									$fullview_content.find('div.project-descr-full-wrapper').jScrollPane('destroy').jScrollPane({
+										verticalDragMinHeight: 40,
+										verticalDragMaxHeight: 40
+									});
+									
+									// center bg image
+									centerBgImage( $fullview.find('img.bg-img') );
+									
+									// fade out overlay
+									$overlay.stop().css( 'opacity', 0 );
+									
+									// fade out clone to show the fullview panel. After that remove the clone
+									$clone.fadeOut( 300, function() { $clone.remove(); } );
+								}}));
+								
+								// animate the images container to the position where is going to be on fullview
+								var thumbsstyle 	= {
+									left	: $(window).width() - $thumbsWrapper.width() - 25 + 'px',  // 25 is the margin left / right of the fullview thumbs-wrapper
+									top		: ($(window).height() / 2) - ($thumbsWrapper.height() / 2) - 22 + 'px' // 10 is the margin top / bottom of the fullview thumbs-wrapper
+								};
+								$thumbsWrapper.stop().applyStyle( thumbsstyle, $.extend( true, [], { duration : animspeed, easing : animeasing} ) );
+								
+								// fade in overlay
+								( anim ) ? $overlay.show().fadeTo( animspeed, 0.7, animeasing ) : $overlay.show().css( 'opacity', 0.7 );
+							},
+							// close the fullview
+							hideArticle				= function( $article ) {
+								// create the article's clone. the second argument is false to prevent the clone to be removed
+								showArticle( $article, false );
+								// hide the overlay for now
+								$overlay.hide();
+								// reference to the created clone and its thumbs wrapper
+								var $clone			= $('#article-clone'),
+									$thumbsWrapper	= $clone.find('div.thumbs-wrapper');
+								// fade in the clone
+								$clone.hide().fadeIn( 200, function() {
+									// remove the contents of the fullview container
+									$fullview.empty();
+									// animate the clone to the article position and size
+									$(this).animate({
+										left	: $article.offset().left + 'px',
+										top		: $article.offset().top + 'px',
+										width	: $article.width() + 'px',
+										height	: $article.height() + 'px'
+									}, animspeed, animeasing, function() {
+										// remove the clone
+										$clone.remove();
+										// show the scrollbar
+										$('body').css( 'overflow', 'visible' );
+									});
+									
+									// animate the clone's thumbs wrapper so it moves to the article's thumbs wrapper position
+									$thumbsWrapper.animate({
+										left	: '0px',
+										top		: '0px'
+									}, animspeed, animeasing);
+									
+									// fade out the overlay
+									$overlay.show().fadeTo( animspeed, 0, animeasing, function() { $overlay.hide() } );
+								});
+							},
+							// gets the article's necessary info to build the fullview panel
+							getArticleFullviewData	= function( $article ) {
+								return {
+									bgimage			: '<img src="' + $article.data('bgimage') + '" class="bg-img"></img>',
+									title 			: $article.find('h2.title').text(),
+									thumbs			: $article.find('div.thumbs').html(),
+									subline			: $article.find('p.subline').text(),
+									description		: $article.find('div.project-descr').html()
+								}
+							},
+							// used when navigating in fullview
+							// needs to get the next / previous article's info
+							showFullviewArticle		= function() {
+								var $article					= $articles.eq( current ),
+									articleFullviewData			= getArticleFullviewData($article),
+								
+									$loading					= $fullview.find('span.loading-small'),
+								
+									$fullviewImage				= $fullview.find('img.bg-img'),
+								
+									$fullviewTitle				= $fullview.find('h2.title'),
+									
+									$fullviewSubline			= $fullview.find('p.subline'),
+									
+									$fullviewDescriptionWrapper	= $fullview.find('div.project-descr-full-wrapper'),
+									$fullviewDescription		= $fullviewDescriptionWrapper.find('div.project-descr-full-content'),
+									
+									$fullviewProjectDescrFull	= $fullview.find('div.project-descr-full'),
+									$fullviewThumbsWrapper		= $fullviewProjectDescrFull.find('div.thumbs-wrapper'),
+									$newFullviewThumbsWrapper	= $('<div class="thumbs-wrapper"><div class="thumbs">' + articleFullviewData.thumbs + '</div></div>');
+								
+								// preload the article's background image
+								$loading.show();
+								$( articleFullviewData.bgimage ).load(function() {
+									$loading.hide();
+									var $bgImage	= $(this);
+									$bgImage.insertBefore( $fullviewImage );
+									// center the bg image
+									centerBgImage( $bgImage );
+									$fullviewImage.remove(); 
+									
+									$fullviewTitle.html( articleFullviewData.title );
+									
+									$fullviewSubline.html( articleFullviewData.subline );
+									
+									$fullviewDescriptionWrapper.jScrollPane('destroy');
+									$fullviewDescription.html( articleFullviewData.description );
+									$fullviewDescriptionWrapper.jScrollPane('destroy').jScrollPane({
+										verticalDragMinHeight: 40,
+										verticalDragMaxHeight: 40
+									});
+									
+									$fullviewThumbsWrapper.remove();
+									$fullviewProjectDescrFull.prepend( $newFullviewThumbsWrapper );	
+									$newFullviewThumbsWrapper.gpCarousel();
+									
+									animrun	= false;
+								}).attr('src', $article.data('bgimage'));
+								
+							},
+							// centers the background image
+							centerBgImage			= function( $img ) {
+								var dim	= getImageDim($img);
+								//set the returned values and show the image
+								$img.css({
+									width	: dim.width + 'px',
+									height	: dim.height + 'px',
+									left	: dim.left + 'px',
+									top		: dim.top + 'px'
+								});
+							},
+							//get dimentions of the image,
+							//in order to make it full size and centered
+							getImageDim				= function($i) {
+								var $img     = new Image();
+								$img.src     = $i.attr('src');
+										
+								var w_w	= $(window).width(),
+								w_h	= $(window).height(),
+								r_w	= w_h / w_w,
+								i_w	= $img.width,
+								i_h	= $img.height,
+								r_i	= i_h / i_w,
+								new_w,new_h,
+								new_left,new_top;
+										
+								if(r_w > r_i){
+									new_h	= w_h;
+									new_w	= w_h / r_i;
+								}
+								else{
+									new_h	= w_w * r_i;
+									new_w	= w_w;
+								}
+										
+								return {
+									width	: new_w,
+									height	: new_h,
+									left	: (w_w - new_w) / 2,
+									top		: (w_h - new_h) / 2
+								};
+										
+							};
+						
+						return {
+							init	: init
+						};
+						
+					})()
+				
+				GridPortfolio.init();
+				
+			});
+		</script>
+	</body>
+</html>

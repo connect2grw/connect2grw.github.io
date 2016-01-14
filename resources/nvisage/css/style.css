@@ -1,0 +1,315 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:#000;
+    font-family:Georgia;
+    font-size: 34px;
+    font-style: italic;
+    letter-spacing:-1px;
+	overflow:hidden;
+}
+
+.section{
+	float:left;
+	width:100%;
+    height:4000px;
+    margin:0px;
+}
+
+.section ul{
+	position:relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:13px;
+	font-style:normal;
+    list-style:none;
+	letter-spacing:1px;
+    margin:-23px 0px 0px 100px;
+	clear:left;
+}
+
+.navBar {
+	position:relative;
+	margin-top:-45px;
+	width:100%;
+	height:15px;
+	background-color:#404040;
+	opacity:0.9;
+	filter:alpha(opacity=90); /* For IE8 and earlier */
+}
+
+.NvisageLogo {
+	position:relative;
+	width:50px;
+	height:66px;
+	margin-left:30px;
+	z-index:98;
+}
+
+.findUs {
+	position:relative;
+	float:left;
+	display:inline-block;
+	top:7px;
+	left:325px;
+}
+
+.facebook a{
+	width:32px;
+	height:32px;
+	margin:0px !important;
+	padding:0px !important;
+	display:block;
+	background:url(../images/facebookButton.png) bottom;
+	text-indent:-99999px;
+}
+
+.facebook a:hover {
+	background-position:0 0;
+}
+
+.twitter a{
+	width:32px;
+	height:32px;
+	margin:0px !important;
+	padding:0px !important;
+	display:block;
+	background:url(../images/twitterButton.png) bottom;
+	text-indent:-99999px;
+}
+
+.twitter a:hover {
+	background-position:0 0;
+}
+
+.pinterest a{
+	width:32px;
+	height:32px;
+	margin:0px !important;
+	padding:0px !important;
+	display:block;
+	background:url(../images/pinterestButton.png) bottom;
+	text-indent:-99999px;
+}
+
+.pinterest a:hover {
+	background-position:0 0;
+}
+
+.workBackground {
+	position:relative;
+	width:100%;
+	height:425px;
+	background:#fff url(../images/ricepaper2.png) repeat;
+	box-shadow:3px 3px 20px 0px #000000;
+	top:150px;
+}
+
+.workBackground_black {
+	position:relative;
+	width:100%;
+	height:425px;
+	background:#000 url(../images/dark_wall.png) repeat;
+	box-shadow:3px 3px 20px 0px #000000;
+	top:150px;
+}
+
+.topOrnament {
+	position:inherit;
+	float:left;
+	width:149px;
+	height:74px;
+	background-image:url(../images/ornamentWhite.png);
+	bottom:53px;
+	left:7px;
+}
+
+.topOrnament_black {
+	position:inherit;
+	float:left;
+	width:149px;
+	height:74px;
+	background-image:url(../images/ornamentBlack.png);
+	bottom:53px;
+	left:7px;
+}
+
+.bottomOrnament {
+	position:relative;
+	width:149px;
+	height:74px;
+	background-image:url(../images/ornamentWhite_bottom.png);
+	bottom:-128px;
+	left:626px;
+}
+
+.bottomOrnament_black {
+	position:relative;
+	width:149px;
+	height:74px;
+	background-image:url(../images/ornamentBlack_bottom.png);
+	bottom:-128px;
+	left:626px;
+}
+
+.descriptionAbout h1 {
+	position:inherit;
+	font-family:"cantarellregular", Helvetica, sans-serif;
+	font-size:66px;
+	font-style:normal;
+	color:#777;
+	width:auto;
+	height:50px;
+	bottom:150px;
+	margin-bottom:-50px;
+}
+
+.descriptionAbout {
+	position:inherit;
+	width:480px;
+	height:200px;
+	left:768px;
+	bottom:223px;
+	clear:both
+}
+
+.descriptionAbout p {
+	font-family:"cantarellregular", Helvetica, sans-serif;
+	font-size:12pt;
+	font-style:normal;
+	color:#777;
+	line-height:1.5;
+	text-align:justify;
+}
+
+.descriptionPartners h1 {
+	position:inherit;
+	font-family:"cantarellregular", Helvetica, sans-serif;
+	font-size:66px;
+	font-style:normal;
+	color:#777;
+	width:auto;
+	height:50px;
+	bottom:150px;
+	margin-bottom:-50px;
+}
+
+.descriptionPartners {
+	position:inherit;
+	width:480px;
+	height:200px;
+	left:768px;
+	bottom:261px;
+	clear:both
+}
+
+.descriptionPartners p {
+	font-family:"cantarellregular", Helvetica, sans-serif;
+	font-size:12pt;
+	font-style:normal;
+	color:#777;
+	line-height:1.5;
+	text-align:justify;
+}
+
+.contactInfo h1 {
+	position:inherit;
+	font-family:"cantarellregular", Helvetica, sans-serif;
+	font-size:66px;
+	font-style:normal;
+	color:#777;
+	width:auto;
+	height:50px;
+	bottom:150px;
+	margin-bottom:-50px;
+}
+
+.contactInfo {
+	position:inherit;
+	width:480px;
+	height:200px;
+	left:768px;
+	bottom:245px;
+}
+
+.contactInfo p {
+	font-family:"cantarellregular", Helvetica, sans-serif;
+	font-size:12pt;
+	font-style:normal;
+	color:#777;
+	line-height:1.5;
+}
+
+.pageOne{
+    background:#fff url(../images/subtle_orange_emboss.png) repeat;
+}
+
+.pageOne ul li{
+    float:left;
+    padding:5px;
+    margin:5px;
+    color:#aaa;
+}
+
+.pageOne ul li a{
+    display:block;
+    color:#f0f0f0;
+}
+
+.pageOne ul li a:hover{
+    text-decoration:none;
+    color:#aaa;
+}
+
+.pageThree {
+	background:#fff url(../images/subtle_orange_emboss.png) repeat;
+}
+
+.pageThree ul li {
+	float:left;
+    padding:5px;
+    margin:5px;
+    color:#aaa;
+}
+
+.pageThree ul li a {
+	display:block;
+	color:#f0f0f0;
+}
+
+.pageThree ul li a:hover{
+	text-decoration:none;
+	color:#aaa;
+}
+
+.pageFour{
+    background:#000 url(../images/use_your_illusion.png) repeat;
+}
+
+.pageFour ul li{
+    float:left;
+    padding:5px;
+    margin:5px;
+    color:#aaa;
+}
+
+.pageFour ul li a{
+    display:block;
+    color:#f0f0f0;
+}
+
+.pageFour ul li a:hover{
+    text-decoration:none;
+    color:#aaa;
+}
+
+#contactForm {
+	position:inherit;
+	width:516px;
+	height:auto;
+	top:-45px;
+	left:115px;
+	z-index:101;
+}

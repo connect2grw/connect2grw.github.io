@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:#fff;
+    font-family:Georgia;
+    font-size:34px;
+    font-style:italic;
+    letter-spacing:-1px;
+    width:16000px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+	overflow:hidden;
+}
+
+.horizontal{
+	float:left;
+	width:4000px;
+    height:4000px;
+    margin:0px;
+    bottom:0px;
+}
+
+.horizontal ul{
+    position:relative;
+	font-family:"Arial", Helvetica, sans-serif;
+	font-size:13px;
+	font-style:normal;
+    list-style:none;
+	letter-spacing:1px;
+    margin:-23px 0px 0px 100px;
+	clear:left;
+}
+
+.horizNext {
+	position:inherit;
+	left:642px;
+	bottom:146px;
+}
+
+.horizNext a {
+	width:43px;
+	height:33px;
+	display:block;
+	text-indent:-99999px;
+	background:url(../images/rightArrow.png) bottom;
+	-webkit-border-radius:3px;
+	clear:left;
+}
+
+.horizNext a:hover{
+	background-position:0 0;
+}
+
+.horizBack {
+	position:inherit;
+	bottom:46px;
+	left:18px;
+}
+
+.horizBack a{
+	width:43px;
+	height:33px;
+	display:block;
+	text-indent:-99999px;
+	background:url(../images/leftArrow.png) bottom;
+	-webkit-border-radius:3px;
+}
+
+.horizBack a:hover{
+	background-position:0 0;
+}
+
+.shortcutNav {
+	position:relative;
+	float:left;
+	top:-30px;
+	left:-53px;	
+}
+
+.shortcutNav ul li {
+	float:left;
+    color:#777 !important;
+	padding:3px !important;
+}
+
+.shortcutNav ul li.active {
+	float:left;
+	background-color:#fff;
+    color:#1b1b1b !important;
+	padding:3px !important;
+	-webkit-border-radius:2px;
+}
+
+.shortcutNav ul li a {
+	display:block;
+    color:#777 !important;
+}
+
+.shortcutNav ul li a:hover {
+	text-decoration:none;
+    color:#fff !important;
+}
+
+.description h1 {
+	position:inherit;
+	font-family:"cantarellregular", Helvetica, sans-serif;
+	font-size:66px;
+	font-style:normal;
+	color:#777;
+	width:auto;
+	height:50px;
+	bottom:155px;
+	margin-bottom:-50px;
+}
+
+.description {
+	position:inherit;
+	float:left;
+	width:480px;
+	height:200px;
+	left:110px;
+	bottom:100px;
+}
+
+.description p {
+	font-family:"cantarellregular", Helvetica, sans-serif;
+	font-size:12pt;
+	font-style:normal;
+	color:#777;
+	line-height:1.5;
+	text-align:justify;
+}
+
+.pageTwo {
+    background:#000 url(../images/use_your_illusion.png) repeat;
+}
+
+.pageTwo ul li {
+    float:left;
+    padding:5px;
+    margin:5px;
+    color:#aaa;
+}
+
+.pageTwo ul li a {
+    display:block;
+    color:#f0f0f0;
+}
+
+.pageTwo ul li a:hover {
+    text-decoration:none;
+    color:#aaa;
+}
